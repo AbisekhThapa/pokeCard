@@ -1,13 +1,16 @@
-# Astro + React Example
+# PokeCard
 
-```sh
-npm create astro@latest -- --template framework-react
-```
+#Pokemon searching site.
 
-[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/withastro/astro/tree/latest/examples/framework-react)
-[![Open with CodeSandbox](https://assets.codesandbox.io/github/button-edit-lime.svg)](https://codesandbox.io/p/sandbox/github/withastro/astro/tree/latest/examples/framework-react)
-[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/withastro/astro?devcontainer_path=.devcontainer/framework-react/devcontainer.json)
+------------------------------------
+#Steps to follow to clone this site locally:
+1.go to terminal
+2.git clone https://github.com/AbisekhThapa/pokeCard.git 
+3.Go to cloned folder through terminal.
+4.npm install.
+5.npm run dev.
+6.Go to your browser and start http://localhost:4321
 
-This example showcases Astro working with [React](https://react.dev).
+In this way you can run this site on your local computer.
 
-Write your React components as `.jsx` or `.tsx` files in your project.
+----------------------------------------
