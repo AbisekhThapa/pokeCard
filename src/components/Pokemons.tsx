@@ -84,24 +84,27 @@ const Pokemons = () => {
       </div>
 
       <div className="flex flex-wrap justify-center gap-6 overflow-x-hidden py-4 mx-[20px]">
-        {allPokemon?.results?.map((each: any, index) => {
-          const parts = each?.url.split("/");
-          const pokemonNumber = parts[parts.length - 2];
-          const pokeType: any = allType?.map((item: any) => {
-            if (item?.name == each?.name) {
-              return item?.type;
-            }
-          });
-          return (
-            <div key={index} className="hover:scale-105">
-              <Card
-                name={each?.name}
-                image={`https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/${pokemonNumber}.png`}
-                type={pokeType}
-              />
-            </div>
-          );
-        })}
+        {allPokemon &&
+          allPokemon?.results?.map((each: any, index) => {
+            const parts = each?.url.split("/");
+            const pokemonNumber = parts[parts.length - 2];
+            const pokeType: any =
+              allType &&
+              allType?.map((item: any) => {
+                if (item?.name == each?.name) {
+                  return item?.type;
+                }
+              });
+            return (
+              <div key={index} className="hover:scale-105">
+                <Card
+                  name={each?.name}
+                  image={`https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/${pokemonNumber}.png`}
+                  type={pokeType}
+                />
+              </div>
+            );
+          })}
       </div>
     </div>
   );
